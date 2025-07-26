@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autocode Free Access Code</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header-container">
+        <a href="#" id="Logo">
+            <img src="A.png" alt="Logo">
+        </a>
+        <span class="header-signup">| Autocode Free code/please follow me and support me, also you can dm me in FB if you need help for free</span>
+    </header>
+
+    <div class="main-content">
+        <!-- Sign-up Form -->
+        <div class="container" id="signupForm" style="display:none;">
+            <div class="header-part">
+                <div class="logo-circle">
+                    <img src="A.png" alt="Logo">
+                    <span>Create Account</span>
+                </div>
+            </div>
+            <form method="post" action="Access.php">
+                <div class="mb-3">
+                    <label for="fName" class="form-label">First Name</label>
+                    <div class="input-group">
+                        <i class="fas fa-user"></i>
+                        <input type="text" class="form-control" name="fName" id="fName" placeholder="First Name" required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="lName" class="form-label">Last Name</label>
+                    <div class="input-group">
+                        <i class="fas fa-user"></i>
+                        <input type="text" class="form-control" name="lName" id="lName" placeholder="Last Name" required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <div class="input-group">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <div class="input-group">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" class="form-control" name="password" id="password" placeholder="Password" required>
+                    </div>
+                </div>
+                <button type="submit" class="btn" name="signUp">Sign Up</button>
+            </form>
+            <p class="terms-text">By Creating Account, You Agree To Autocode's <a href="#" class="link-terms">Terms of Service</a> & <a href="#" class="link-terms">Privacy Policy</a></p>
+            <div class="divider">
+                <hr class="divider-line">
+                <span class="divider-text">OR</span>
+                <hr class="divider-line">
+            </div>
+            <div class="btn-group">
+                <button class="button-social">
+                    <img src="communication.png" alt="Facebook">
+                    Facebook
+                </button>
+                <button class="button-social">
+                    <img src="google.png" alt="Google">
+                    Google
+                </button>
+            </div>
+            <p class="login-text">Already have an account? <button id="signInButton" class="link-login">Sign In</button></p>
+        </div>
+
+        <!-- Sign-in Form -->
+        <div class="container" id="signInForm">
+            <div class="header-part">
+                <div class="logo-circle">
+                    <img src="A.png" alt="Logo">
+                    <span>Sign In to your account</span>
+                </div>
+            </div>
+            <form method="post" action="Access.php">
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <div class="input-group">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <div class="input-group">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" class="form-control" name="password" id="password" placeholder="Password" required>
+                    </div>
+                </div>
+                <div class="remember-me">
+                    <label>
+                        <input type="checkbox" name="remember"> Remember me
+                    </label>
+                    <a href="#" class="forgotpass">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn" name="signIn">Sign In</button>
+            </form>
+            <div class="divider">
+                <hr class="divider-line">
+                <span class="divider-text">OR</span>
+                <hr class="divider-line">
+            </div>
+            <div class="btn-group">
+                <button class="button-social">
+                    <img src="communication.png" alt="Facebook">
+                    Facebook
+                </button>
+                <button class="button-social">
+                    <img src="google.png" alt="Google">
+                    Google
+                </button>
+            </div>
+            <p class="login-text">Don't have an account yet? <button id="signUpButton" class="link-login">Sign Up</button></p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('signInButton').addEventListener('click', () => {
+            document.getElementById('signupForm').style.display = 'none';
+            document.getElementById('signInForm').style.display = 'block';
+        });
+
+        document.getElementById('signUpButton').addEventListener('click', () => {
+            document.getElementById('signInForm').style.display = 'none';
+            document.getElementById('signupForm').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
